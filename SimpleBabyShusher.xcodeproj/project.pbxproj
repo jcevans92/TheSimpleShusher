@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F35CF442090CCBE006D721D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF432090CCBE006D721D /* MainViewController.swift */; };
+		7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF452090CDBC006D721D /* ShusherButton.swift */; };
+		7F35CF482090E0B2006D721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF472090E0B2006D721D /* Main.storyboard */; };
 		7FDFC91D20901B7C00F00F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC91C20901B7C00F00F11 /* AppDelegate.swift */; };
-		7FDFC91F20901B7C00F00F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC91E20901B7C00F00F11 /* ViewController.swift */; };
-		7FDFC92220901B7C00F00F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92020901B7C00F00F11 /* Main.storyboard */; };
 		7FDFC92420901B7E00F00F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92320901B7E00F00F11 /* Assets.xcassets */; };
 		7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */; };
 		7FDFC93220901B7E00F00F11 /* SimpleBabyShusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC93120901B7E00F00F11 /* SimpleBabyShusherTests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F35CF432090CCBE006D721D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7F35CF452090CDBC006D721D /* ShusherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShusherButton.swift; sourceTree = "<group>"; };
+		7F35CF472090E0B2006D721D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7FDFC91920901B7C00F00F11 /* SimpleBabyShusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBabyShusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDFC91C20901B7C00F00F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FDFC91E20901B7C00F00F11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7FDFC92120901B7C00F00F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FDFC92320901B7E00F00F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FDFC92620901B7E00F00F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FDFC92820901B7E00F00F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,9 +76,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F35CF3F2090CC4F006D721D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7F35CF402090CC56006D721D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F35CF412090CC5C006D721D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F35CF452090CDBC006D721D /* ShusherButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F35CF422090CC64006D721D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F35CF432090CCBE006D721D /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7FDFC91020901B7C00F00F11 = {
 			isa = PBXGroup;
 			children = (
+				7F35CF472090E0B2006D721D /* Main.storyboard */,
 				7FDFC91B20901B7C00F00F11 /* SimpleBabyShusher */,
 				7FDFC93020901B7E00F00F11 /* SimpleBabyShusherTests */,
 				7FDFC93B20901B7E00F00F11 /* SimpleBabyShusherUITests */,
@@ -97,9 +130,11 @@
 		7FDFC91B20901B7C00F00F11 /* SimpleBabyShusher */ = {
 			isa = PBXGroup;
 			children = (
+				7F35CF422090CC64006D721D /* Controller */,
+				7F35CF412090CC5C006D721D /* View */,
+				7F35CF402090CC56006D721D /* Model */,
+				7F35CF3F2090CC4F006D721D /* Sounds */,
 				7FDFC91C20901B7C00F00F11 /* AppDelegate.swift */,
-				7FDFC91E20901B7C00F00F11 /* ViewController.swift */,
-				7FDFC92020901B7C00F00F11 /* Main.storyboard */,
 				7FDFC92320901B7E00F00F11 /* Assets.xcassets */,
 				7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */,
 				7FDFC92820901B7E00F00F11 /* Info.plist */,
@@ -229,9 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F35CF482090E0B2006D721D /* Main.storyboard in Resources */,
 				7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */,
 				7FDFC92420901B7E00F00F11 /* Assets.xcassets in Resources */,
-				7FDFC92220901B7C00F00F11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FDFC91F20901B7C00F00F11 /* ViewController.swift in Sources */,
 				7FDFC91D20901B7C00F00F11 /* AppDelegate.swift in Sources */,
+				7F35CF442090CCBE006D721D /* MainViewController.swift in Sources */,
+				7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7FDFC92020901B7C00F00F11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FDFC92120901B7C00F00F11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
