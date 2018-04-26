@@ -9,8 +9,12 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    // Shushing Variables
     var bIsShushing: Bool = false
+    var shushSound: String = "Dad"
+    
+    // Sound Utils used to play shush sounds
+    private let soundUtils = SoundUtils()
     
     let viewTitle: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 230, height: 30))
@@ -72,7 +76,7 @@ class MainViewController: UIViewController {
         // Segmented Control
         soundChoiceControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         soundChoiceControl.topAnchor.constraint(equalTo: viewTitle.bottomAnchor, constant: 100).isActive = true
-        soundChoiceControl.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        soundChoiceControl.widthAnchor.constraint(equalToConstant: 250).isActive = true
         soundChoiceControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         // Button Layout
@@ -97,21 +101,26 @@ class MainViewController: UIViewController {
             bIsShushing = false
             shushBtn.SetButtonColor(bIsShushing: false)
             shushBtn.layer.removeAllAnimations()
+            // Kill Shush Sound
+            soundUtils.StopShushSounds()
         } else {
             bIsShushing = true
             shushBtn.SetButtonColor(bIsShushing: true)
             shushBtn.pulsate()
+            if self.shushSound == "Dad" {
+                soundUtils.PlayMaleShush()
+            }
         }
     }
     
     @objc func changeSoundItem(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            print("Dad sound")
+            self.shushSound = "Dad"
         case 1:
-            print("Mom sound")
+            self.shushSound = "Mom"
         default:
-            print("Dad Sound")
+            self.shushSound = "Dad"
         }
     }
 
