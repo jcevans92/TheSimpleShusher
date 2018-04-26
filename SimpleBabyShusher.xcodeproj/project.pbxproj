@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095A505FB47ED61010111B13 /* Pods_SimpleBabyShusherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */; };
 		7F35CF442090CCBE006D721D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF432090CCBE006D721D /* MainViewController.swift */; };
 		7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF452090CDBC006D721D /* ShusherButton.swift */; };
 		7F35CF482090E0B2006D721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF472090E0B2006D721D /* Main.storyboard */; };
+		7F35CF4A20925675006D721D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF4920925674006D721D /* GoogleService-Info.plist */; };
 		7FC3EF6120910CF200EF7CFA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF6020910CF200EF7CFA /* UIButtonExtension.swift */; };
 		7FC3EF63209159BA00EF7CFA /* RedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF62209159BA00EF7CFA /* RedSegmentedControl.swift */; };
 		7FC3EF662091737600EF7CFA /* SoundUtlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF652091737600EF7CFA /* SoundUtlities.swift */; };
@@ -19,6 +21,8 @@
 		7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */; };
 		7FDFC93220901B7E00F00F11 /* SimpleBabyShusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC93120901B7E00F00F11 /* SimpleBabyShusherTests.swift */; };
 		7FDFC93D20901B7E00F00F11 /* SimpleBabyShusherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC93C20901B7E00F00F11 /* SimpleBabyShusherUITests.swift */; };
+		F5E611F601CDDFC1886DC9F3 /* Pods_SimpleBabyShusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FBB17A4AB67B1C076DE83C /* Pods_SimpleBabyShusher.framework */; };
+		FD05293A54DB355DBB257120 /* Pods_SimpleBabyShusherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710C5FFA442DF65B9499085 /* Pods_SimpleBabyShusherUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035396D3EFD13EBF2F7CF238 /* Pods-SimpleBabyShusher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher.debug.xcconfig"; sourceTree = "<group>"; };
+		07D9D29D37119C6BB6EFE896 /* Pods-SimpleBabyShusherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherTests/Pods-SimpleBabyShusherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBabyShusherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FBB17A4AB67B1C076DE83C /* Pods_SimpleBabyShusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBabyShusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5710C5FFA442DF65B9499085 /* Pods_SimpleBabyShusherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBabyShusherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		771A00EA28541EB8F5C28DCB /* Pods-SimpleBabyShusherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherUITests/Pods-SimpleBabyShusherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7944DEC4DA34D5EF3A61A6C2 /* Pods-SimpleBabyShusherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherTests/Pods-SimpleBabyShusherTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F35CF432090CCBE006D721D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7F35CF452090CDBC006D721D /* ShusherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShusherButton.swift; sourceTree = "<group>"; };
 		7F35CF472090E0B2006D721D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7F35CF4920925674006D721D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FC3EF6020910CF200EF7CFA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		7FC3EF62209159BA00EF7CFA /* RedSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSegmentedControl.swift; sourceTree = "<group>"; };
 		7FC3EF652091737600EF7CFA /* SoundUtlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtlities.swift; sourceTree = "<group>"; };
@@ -57,6 +69,8 @@
 		7FDFC93820901B7E00F00F11 /* SimpleBabyShusherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBabyShusherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDFC93C20901B7E00F00F11 /* SimpleBabyShusherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBabyShusherUITests.swift; sourceTree = "<group>"; };
 		7FDFC93E20901B7E00F00F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71E5A0B9EAC477CC5C90503 /* Pods-SimpleBabyShusher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusher.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher.release.xcconfig"; sourceTree = "<group>"; };
+		F751FFF8A7FF2178B70DA41A /* Pods-SimpleBabyShusherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherUITests/Pods-SimpleBabyShusherUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E611F601CDDFC1886DC9F3 /* Pods_SimpleBabyShusher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095A505FB47ED61010111B13 /* Pods_SimpleBabyShusherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD05293A54DB355DBB257120 /* Pods_SimpleBabyShusherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		783D900324CAA9FC3B66C17C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				035396D3EFD13EBF2F7CF238 /* Pods-SimpleBabyShusher.debug.xcconfig */,
+				E71E5A0B9EAC477CC5C90503 /* Pods-SimpleBabyShusher.release.xcconfig */,
+				07D9D29D37119C6BB6EFE896 /* Pods-SimpleBabyShusherTests.debug.xcconfig */,
+				7944DEC4DA34D5EF3A61A6C2 /* Pods-SimpleBabyShusherTests.release.xcconfig */,
+				771A00EA28541EB8F5C28DCB /* Pods-SimpleBabyShusherUITests.debug.xcconfig */,
+				F751FFF8A7FF2178B70DA41A /* Pods-SimpleBabyShusherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7F35CF3F2090CC4F006D721D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +167,8 @@
 				7FDFC93020901B7E00F00F11 /* SimpleBabyShusherTests */,
 				7FDFC93B20901B7E00F00F11 /* SimpleBabyShusherUITests */,
 				7FDFC91A20901B7C00F00F11 /* Products */,
+				783D900324CAA9FC3B66C17C /* Pods */,
+				BD70951B3BD166F051325235 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +198,7 @@
 				7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */,
 				7F35CF472090E0B2006D721D /* Main.storyboard */,
 				7FDFC92820901B7E00F00F11 /* Info.plist */,
+				7F35CF4920925674006D721D /* GoogleService-Info.plist */,
 			);
 			path = SimpleBabyShusher;
 			sourceTree = "<group>";
@@ -188,6 +221,16 @@
 			path = SimpleBabyShusherUITests;
 			sourceTree = "<group>";
 		};
+		BD70951B3BD166F051325235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44FBB17A4AB67B1C076DE83C /* Pods_SimpleBabyShusher.framework */,
+				28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */,
+				5710C5FFA442DF65B9499085 /* Pods_SimpleBabyShusherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FDFC94120901B7E00F00F11 /* Build configuration list for PBXNativeTarget "SimpleBabyShusher" */;
 			buildPhases = (
+				96E906A6157A7052EF953D14 /* [CP] Check Pods Manifest.lock */,
 				7FDFC91520901B7C00F00F11 /* Sources */,
 				7FDFC91620901B7C00F00F11 /* Frameworks */,
 				7FDFC91720901B7C00F00F11 /* Resources */,
+				D36C61F2C7F9223B34320DDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FDFC94420901B7E00F00F11 /* Build configuration list for PBXNativeTarget "SimpleBabyShusherTests" */;
 			buildPhases = (
+				5D79AB91E3138CFB63E43346 /* [CP] Check Pods Manifest.lock */,
 				7FDFC92920901B7E00F00F11 /* Sources */,
 				7FDFC92A20901B7E00F00F11 /* Frameworks */,
 				7FDFC92B20901B7E00F00F11 /* Resources */,
@@ -230,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FDFC94720901B7E00F00F11 /* Build configuration list for PBXNativeTarget "SimpleBabyShusherUITests" */;
 			buildPhases = (
+				1873B7F9A218FC4870EC6B3B /* [CP] Check Pods Manifest.lock */,
 				7FDFC93420901B7E00F00F11 /* Sources */,
 				7FDFC93520901B7E00F00F11 /* Frameworks */,
 				7FDFC93620901B7E00F00F11 /* Resources */,
@@ -294,6 +341,7 @@
 			files = (
 				7F35CF482090E0B2006D721D /* Main.storyboard in Resources */,
 				7FC3EF68209175C100EF7CFA /* MaleShush.mp3 in Resources */,
+				7F35CF4A20925675006D721D /* GoogleService-Info.plist in Resources */,
 				7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */,
 				7FDFC92420901B7E00F00F11 /* Assets.xcassets in Resources */,
 			);
@@ -314,6 +362,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1873B7F9A218FC4870EC6B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBabyShusherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D79AB91E3138CFB63E43346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBabyShusherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E906A6157A7052EF953D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBabyShusher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36C61F2C7F9223B34320DDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FDFC91520901B7C00F00F11 /* Sources */ = {
@@ -488,16 +613,14 @@
 		};
 		7FDFC94220901B7E00F00F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035396D3EFD13EBF2F7CF238 /* Pods-SimpleBabyShusher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,16 +630,14 @@
 		};
 		7FDFC94320901B7E00F00F11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71E5A0B9EAC477CC5C90503 /* Pods-SimpleBabyShusher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,17 +647,14 @@
 		};
 		7FDFC94520901B7E00F00F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D9D29D37119C6BB6EFE896 /* Pods-SimpleBabyShusherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -547,17 +665,14 @@
 		};
 		7FDFC94620901B7E00F00F11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7944DEC4DA34D5EF3A61A6C2 /* Pods-SimpleBabyShusherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -568,16 +683,13 @@
 		};
 		7FDFC94820901B7E00F00F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 771A00EA28541EB8F5C28DCB /* Pods-SimpleBabyShusherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,16 +700,13 @@
 		};
 		7FDFC94920901B7E00F00F11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F751FFF8A7FF2178B70DA41A /* Pods-SimpleBabyShusherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K45PADLJ2;
 				INFOPLIST_FILE = SimpleBabyShusherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

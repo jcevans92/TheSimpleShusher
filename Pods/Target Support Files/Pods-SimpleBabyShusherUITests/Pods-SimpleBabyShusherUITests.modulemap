@@ -1,0 +1,6 @@
+framework module Pods_SimpleBabyShusherUITests {
+  umbrella header "Pods-SimpleBabyShusherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
