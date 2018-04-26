@@ -22,6 +22,15 @@ class MainViewController: UIViewController {
         return label
     }()
     
+    let soundChoiceControl: RedSegmentedControl = {
+        let segmentControl = RedSegmentedControl(items: nil)
+        segmentControl.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        // sets sound on change
+        segmentControl.addTarget(self, action: #selector(changeSoundItem), for: .valueChanged)
+        segmentControl.translatesAutoresizingMaskIntoConstraints = false
+        return segmentControl
+    }()
+    
     let shushBtn: ShusherButton = {
         let button = ShusherButton(frame: CGRect(x: 160, y: 100, width: 50, height: 50))
         // Sets touch argument
@@ -29,12 +38,6 @@ class MainViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    /*let shushBtn: UIButton = {
-       let button = UIButton(frame: CGRect(x: 0, y: 0, width: 160, height: 50))
-
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +48,12 @@ class MainViewController: UIViewController {
         
         // Add all controls to subview
         self.view.addSubview(viewTitle)
+        self.view.addSubview(soundChoiceControl)
         self.view.addSubview(shushBtn)
-        shushBtn.SetButtonColor(bIsShushing: bIsShushing)
         
+        // Set Button Original Color
+        shushBtn.SetButtonColor(bIsShushing: bIsShushing)
+ 
         // Set Layout
         setLayout()
         
@@ -59,20 +65,30 @@ class MainViewController: UIViewController {
         // Auto Layout
         // Label Layout
         viewTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 10).isActive = true
-        viewTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
-        viewTitle.widthAnchor.constraint(equalToConstant: 250).isActive = true//.constraint(lessThanOrEqualToConstant: 230).isActive = true//.constraint(equalToConstant: 230).isActive = true
+        viewTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 75).isActive = true
+        viewTitle.widthAnchor.constraint(equalToConstant: 250).isActive = true
         viewTitle.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        // Segmented Control
+        soundChoiceControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        soundChoiceControl.topAnchor.constraint(equalTo: viewTitle.bottomAnchor, constant: 100).isActive = true
+        soundChoiceControl.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        soundChoiceControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
         // Button Layout
-        //LogoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        shushBtn.center.x = self.view.center.x
-        shushBtn.center.y = self.view.center.y
         shushBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        shushBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+        shushBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 75).isActive = true
         shushBtn.widthAnchor.constraint(equalToConstant: 150).isActive = true
         shushBtn.heightAnchor.constraint(equalToConstant: 150).isActive = true
 
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // ***** Selectors below here *****
     
     // This function is to start and stop the shushing sound
     // It is connected to the Shush button
@@ -88,13 +104,16 @@ class MainViewController: UIViewController {
         }
     }
     
-    func generateAnimation() {
-        
+    @objc func changeSoundItem(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("Dad sound")
+        case 1:
+            print("Mom sound")
+        default:
+            print("Dad Sound")
+        }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 }
