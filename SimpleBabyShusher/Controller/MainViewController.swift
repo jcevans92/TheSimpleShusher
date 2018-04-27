@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import AVFoundation
 
 class MainViewController: UIViewController {
     // Ad Variables
@@ -62,7 +63,15 @@ class MainViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.white
         
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil) //if bundle is nil the main bundle will be used
+        // Anything that can be thrown goes here
+        do {
+            // PLay in background
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setActive(true)
+            // Play in background end
+        } catch {
+            print("Something went wrong in ViewDidLoad")
+        }
         
         // Add all controls to subview
         self.view.addSubview(viewTitle)
@@ -157,6 +166,4 @@ class MainViewController: UIViewController {
             self.shushSound = "Dad"
         }
     }
-
-
 }
