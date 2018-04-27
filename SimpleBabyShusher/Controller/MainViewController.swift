@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MainViewController: UIViewController {
+    // Ad Variables
+    var interstitial: GADInterstitial!
+    
     // Shushing Variables
     var bIsShushing: Bool = false
     var shushSound: String = "Dad"
@@ -61,8 +65,10 @@ class MainViewController: UIViewController {
         // Set Layout
         setLayout()
         
-        // Set Button Color
-
+        // Interstitial Ad
+        // Live
+        //interstitial = GADInterstitial(adUnitID: "ca-app-pub-6241708387402635/7120488183")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
     }
 
     func setLayout() {
@@ -110,6 +116,17 @@ class MainViewController: UIViewController {
             if self.shushSound == "Dad" {
                 soundUtils.PlayMaleShush()
             }
+        }
+        
+        let request = GADRequest()
+        // For child ad content
+        request.tag(forChildDirectedTreatment: true)
+        interstitial.load(request)
+        
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        } else {
+            print("Ad wasn't ready")
         }
     }
     
