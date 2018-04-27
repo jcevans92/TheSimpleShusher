@@ -13,6 +13,7 @@ import AVFoundation
 class MainViewController: UIViewController {
     // Ad Variables
     var interstitial: GADInterstitial!
+    var bannerView: GADBannerView!
     
     // Shushing Variables
     var bIsShushing: Bool = false
@@ -65,7 +66,7 @@ class MainViewController: UIViewController {
         
         // Anything that can be thrown goes here
         do {
-            // PLay in background
+            // Play in background
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
             // Play in background end
@@ -85,10 +86,21 @@ class MainViewController: UIViewController {
         // Set Layout
         setLayout()
         
-        // Interstitial Ad
-        // Live
-        //interstitial = GADInterstitial(adUnitID: "ca-app-pub-6241708387402635/7120488183")
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        // AdMob Code
+        // Banner Ads
+        // Live ID: ca-app-pub-6241708387402635/8950846111
+        // Test ID: ca-app-pub-3940256099942544/2934735716
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        bannerView.load(request)//.loadRequest(GADRequest())
+        addBannerViewToView(bannerView)
+        // End AdMob Code
+        
+        // Observers
+        // This observer runs everytime the app returns to forground
+        NotificationCenter.default.addObserver(self, selector: #selector(appReturnsToForground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
 
     func setLayout() {
@@ -124,8 +136,17 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // ***** Selectors below here *****
+    // Show Banner Ad
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        
+        bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        
+    }
     
+    // ***** Selectors below here *****
     // This function is to start and stop the shushing sound
     // It is connected to the Shush button
     @objc func shushHasBeenPressed(sender: UIButton!) {
@@ -143,17 +164,6 @@ class MainViewController: UIViewController {
                 soundUtils.PlayMaleShush()
             }
         }
-        
-        let request = GADRequest()
-        // For child ad content
-        request.tag(forChildDirectedTreatment: true)
-        interstitial.load(request)
-        
-        if interstitial.isReady {
-            interstitial.present(fromRootViewController: self)
-        } else {
-            print("Ad wasn't ready")
-        }
     }
     
     @objc func changeSoundItem(sender: UISegmentedControl) {
@@ -165,5 +175,15 @@ class MainViewController: UIViewController {
         default:
             self.shushSound = "Dad"
         }
+    }
+    
+    // Runs when the App Returns to Forground
+    // Do any logic needed when the app returns to foreground
+    @objc func appReturnsToForground () {
+        // If the app is still shushing then the button should be pulsating
+        if bIsShushing {
+            shushBtn.pulsate()
+        }
+        // pulsate end
     }
 }

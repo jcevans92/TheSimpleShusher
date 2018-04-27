@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // Initialize the Google Mobile Ads SDK.
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-6241708387402635~3783878408") // Before Publish change to live app id
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-6241708387402635~3783878408")
         
         return true
     }
