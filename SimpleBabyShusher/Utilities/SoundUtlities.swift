@@ -31,6 +31,7 @@ class SoundUtils: NSObject {
             let femaleShushPath = Bundle.main.path(forResource: "FemaleShush.mp3", ofType:nil)!
             let femaleShushurl = URL(fileURLWithPath: femaleShushPath)
             self.shushPlayer = try AVAudioPlayer(contentsOf: femaleShushurl)
+            self.shushPlayer?.numberOfLoops = -1
             self.shushPlayer?.play()
         } catch {
             // Throw exception
