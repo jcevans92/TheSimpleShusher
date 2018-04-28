@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		095A505FB47ED61010111B13 /* Pods_SimpleBabyShusherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */; };
+		7F173C5A20941B32009D3D16 /* FemaleShush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F173C5920941B32009D3D16 /* FemaleShush.mp3 */; };
 		7F35CF442090CCBE006D721D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF432090CCBE006D721D /* MainViewController.swift */; };
 		7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF452090CDBC006D721D /* ShusherButton.swift */; };
 		7F35CF482090E0B2006D721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF472090E0B2006D721D /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		5710C5FFA442DF65B9499085 /* Pods_SimpleBabyShusherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBabyShusherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		771A00EA28541EB8F5C28DCB /* Pods-SimpleBabyShusherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherUITests/Pods-SimpleBabyShusherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7944DEC4DA34D5EF3A61A6C2 /* Pods-SimpleBabyShusherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherTests/Pods-SimpleBabyShusherTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F173C5920941B32009D3D16 /* FemaleShush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FemaleShush.mp3; sourceTree = "<group>"; };
 		7F35CF432090CCBE006D721D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7F35CF452090CDBC006D721D /* ShusherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShusherButton.swift; sourceTree = "<group>"; };
 		7F35CF472090E0B2006D721D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		7F35CF3F2090CC4F006D721D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7F173C5920941B32009D3D16 /* FemaleShush.mp3 */,
 				7FC3EF67209175C100EF7CFA /* MaleShush.mp3 */,
 			);
 			path = Sounds;
@@ -348,6 +351,7 @@
 				7FC3EF68209175C100EF7CFA /* MaleShush.mp3 in Resources */,
 				7F35CF4A20925675006D721D /* GoogleService-Info.plist in Resources */,
 				7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */,
+				7F173C5A20941B32009D3D16 /* FemaleShush.mp3 in Resources */,
 				7FDFC92420901B7E00F00F11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -162,6 +162,8 @@ class MainViewController: UIViewController {
             shushBtn.pulsate()
             if self.shushSound == "Dad" {
                 soundUtils.PlayMaleShush()
+            } else if self.shushSound == "Mom" {
+                soundUtils.PlayFemaleShush()
             }
         }
     }
