@@ -13,10 +13,11 @@
 		7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF452090CDBC006D721D /* ShusherButton.swift */; };
 		7F35CF482090E0B2006D721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF472090E0B2006D721D /* Main.storyboard */; };
 		7F35CF4A20925675006D721D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF4920925674006D721D /* GoogleService-Info.plist */; };
+		7F69C85C209A8EA80065ABED /* MaleShush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F69C85B209A8EA80065ABED /* MaleShush.mp3 */; };
 		7FC3EF6120910CF200EF7CFA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF6020910CF200EF7CFA /* UIButtonExtension.swift */; };
 		7FC3EF63209159BA00EF7CFA /* RedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF62209159BA00EF7CFA /* RedSegmentedControl.swift */; };
 		7FC3EF662091737600EF7CFA /* SoundUtlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3EF652091737600EF7CFA /* SoundUtlities.swift */; };
-		7FC3EF68209175C100EF7CFA /* MaleShush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FC3EF67209175C100EF7CFA /* MaleShush.mp3 */; };
+		7FC861382095504600601655 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC861372095504600601655 /* GameKit.framework */; };
 		7FDFC91D20901B7C00F00F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFC91C20901B7C00F00F11 /* AppDelegate.swift */; };
 		7FDFC92420901B7E00F00F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92320901B7E00F00F11 /* Assets.xcassets */; };
 		7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFC92520901B7E00F00F11 /* LaunchScreen.storyboard */; };
@@ -56,10 +57,11 @@
 		7F35CF452090CDBC006D721D /* ShusherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShusherButton.swift; sourceTree = "<group>"; };
 		7F35CF472090E0B2006D721D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7F35CF4920925674006D721D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F69C85B209A8EA80065ABED /* MaleShush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MaleShush.mp3; sourceTree = "<group>"; };
 		7FC3EF6020910CF200EF7CFA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		7FC3EF62209159BA00EF7CFA /* RedSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSegmentedControl.swift; sourceTree = "<group>"; };
 		7FC3EF652091737600EF7CFA /* SoundUtlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtlities.swift; sourceTree = "<group>"; };
-		7FC3EF67209175C100EF7CFA /* MaleShush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MaleShush.mp3; sourceTree = "<group>"; };
+		7FC861372095504600601655 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		7FDFC91920901B7C00F00F11 /* SimpleBabyShusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBabyShusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDFC91C20901B7C00F00F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FDFC92320901B7E00F00F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E611F601CDDFC1886DC9F3 /* Pods_SimpleBabyShusher.framework in Frameworks */,
+				7FC861382095504600601655 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +122,8 @@
 		7F35CF3F2090CC4F006D721D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7F69C85B209A8EA80065ABED /* MaleShush.mp3 */,
 				7F173C5920941B32009D3D16 /* FemaleShush.mp3 */,
-				7FC3EF67209175C100EF7CFA /* MaleShush.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 		BD70951B3BD166F051325235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FC861372095504600601655 /* GameKit.framework */,
 				44FBB17A4AB67B1C076DE83C /* Pods_SimpleBabyShusher.framework */,
 				28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */,
 				5710C5FFA442DF65B9499085 /* Pods_SimpleBabyShusherUITests.framework */,
@@ -310,6 +314,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
 						};
 					};
 					7FDFC92C20901B7E00F00F11 = {
@@ -348,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F35CF482090E0B2006D721D /* Main.storyboard in Resources */,
-				7FC3EF68209175C100EF7CFA /* MaleShush.mp3 in Resources */,
+				7F69C85C209A8EA80065ABED /* MaleShush.mp3 in Resources */,
 				7F35CF4A20925675006D721D /* GoogleService-Info.plist in Resources */,
 				7FDFC92720901B7E00F00F11 /* LaunchScreen.storyboard in Resources */,
 				7F173C5A20941B32009D3D16 /* FemaleShush.mp3 in Resources */,

@@ -91,7 +91,7 @@ class MainViewController: UIViewController {
         // Live ID: ca-app-pub-6241708387402635/8950846111
         // Test ID: ca-app-pub-3940256099942544/2934735716
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-6241708387402635/8950846111"
         bannerView.rootViewController = self
         let request = GADRequest()
         bannerView.load(request)//.loadRequest(GADRequest())
