@@ -40,6 +40,7 @@ class SoundUtils: NSObject {
     }
     
     public func StopShushSounds() {
+        AppStoreReviewManager.requestReviewIfAppropriate()
         if let bPlaying = self.shushPlayer?.isPlaying {
             if bPlaying {
                 self.shushPlayer?.stop()
