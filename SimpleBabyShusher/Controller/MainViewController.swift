@@ -67,7 +67,9 @@ class MainViewController: UIViewController {
         // Anything that can be thrown goes here
         do {
             // Play in background
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: AVAudioSession.CategoryOptions.mixWithOthers)
+            // Converted from swift 3 to five
+            //setCategory(convertFromAVAudioSessionCategory(AVAudioSession.Category.playback), with: .mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
             // Play in background end
         } catch {
@@ -100,7 +102,7 @@ class MainViewController: UIViewController {
         
         // Observers
         // This observer runs everytime the app returns to forground
-        NotificationCenter.default.addObserver(self, selector: #selector(appReturnsToForground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appReturnsToForground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
     func setLayout() {
@@ -188,4 +190,9 @@ class MainViewController: UIViewController {
         }
         // pulsate end
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }

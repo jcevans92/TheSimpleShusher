@@ -310,6 +310,7 @@
 				TargetAttributes = {
 					7FDFC91820901B7C00F00F11 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1130;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -321,10 +322,12 @@
 					};
 					7FDFC92C20901B7E00F00F11 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 7FDFC91820901B7C00F00F11;
 					};
 					7FDFC93720901B7E00F00F11 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 7FDFC91820901B7C00F00F11;
 					};
 				};
@@ -642,7 +645,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -662,7 +665,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -683,7 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBabyShusher.app/SimpleBabyShusher";
 			};
@@ -705,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBabyShusher.app/SimpleBabyShusher";
 			};
@@ -726,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleBabyShusher;
 			};
@@ -747,7 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chiefgeekstudios.SimpleBabyShusherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleBabyShusher;
 			};
