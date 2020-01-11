@@ -11,6 +11,7 @@ import GoogleMobileAds
 import AVFoundation
 
 class MainViewController: UIViewController {
+    // Store Page: https://apps.apple.com/us/app/simple-baby-shusher/id1378066800
     // Ad Variables
     var interstitial: GADInterstitial!
     var bannerView: GADBannerView!
@@ -111,7 +112,8 @@ class MainViewController: UIViewController {
         
         // Segmented Control
         soundChoiceControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        soundChoiceControl.topAnchor.constraint(equalTo: viewTitle.bottomAnchor, constant: 125).isActive = true
+        //soundChoiceControl.topAnchor.constraint(equalTo: viewTitle.bottomAnchor, constant: 125).isActive = true
+        soundChoiceControl.topAnchor.constraint(equalTo: viewTitle.bottomAnchor, constant: 75).isActive = true
         soundChoiceControl.widthAnchor.constraint(equalToConstant: 250).isActive = true
         soundChoiceControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
