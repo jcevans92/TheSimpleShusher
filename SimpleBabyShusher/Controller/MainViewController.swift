@@ -63,6 +63,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Navbar settings
+        let cogButton = UIButton(image: UIImage(named: "cog")!, tintColor: .black, target: self, action: #selector(settingsButtonClicked))
+        cogButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        cogButton.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        cogButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        let settingsButton = UIBarButtonItem(customView: cogButton)
+        //self.navigationBar.setItems([rightNavigationItem], animated: true)
+        self.navigationItem.setRightBarButton(settingsButton, animated: true)
+        
         self.view.backgroundColor = UIColor.white
         
         // Anything that can be thrown goes here
@@ -197,9 +206,16 @@ class MainViewController: UIViewController {
         }
         // pulsate end
     }
+    
+    // Navbutton Action
+    @objc func settingsButtonClicked() {
+        print("Button Clicked")
+    }
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
 	return input.rawValue
 }
+
+

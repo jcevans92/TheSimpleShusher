@@ -19,10 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let rootController = MainViewController()
+        // Root Controller
+        let navController = RootNavController()
         
         // Set root view controller
-        window?.rootViewController =  rootController
+        window?.rootViewController = navController //rootController
         window?.makeKeyAndVisible()
         
         // Configures for Analytics

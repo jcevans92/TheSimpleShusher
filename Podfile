@@ -6,6 +6,7 @@ target 'SimpleBabyShusher' do
   use_frameworks!
 	pod 'Firebase'
 	pod 'Firebase/AdMob'
+	pod 'LBTATools'
   # Pods for SimpleBabyShusher
 
   target 'SimpleBabyShusherTests' do

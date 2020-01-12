@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		095A505FB47ED61010111B13 /* Pods_SimpleBabyShusherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28669884269915EE02641A60 /* Pods_SimpleBabyShusherTests.framework */; };
 		7F173C5A20941B32009D3D16 /* FemaleShush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F173C5920941B32009D3D16 /* FemaleShush.mp3 */; };
+		7F20AAA823CB708B00744ACD /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20AAA723CB708B00744ACD /* RootNavController.swift */; };
+		7F20AAAC23CB7EC700744ACD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20AAAB23CB7EC700744ACD /* SettingsTableViewController.swift */; };
 		7F35CF442090CCBE006D721D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF432090CCBE006D721D /* MainViewController.swift */; };
 		7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35CF452090CDBC006D721D /* ShusherButton.swift */; };
 		7F35CF482090E0B2006D721D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35CF472090E0B2006D721D /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		771A00EA28541EB8F5C28DCB /* Pods-SimpleBabyShusherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherUITests/Pods-SimpleBabyShusherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7944DEC4DA34D5EF3A61A6C2 /* Pods-SimpleBabyShusherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBabyShusherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBabyShusherTests/Pods-SimpleBabyShusherTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F173C5920941B32009D3D16 /* FemaleShush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FemaleShush.mp3; sourceTree = "<group>"; };
+		7F20AAA723CB708B00744ACD /* RootNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavController.swift; sourceTree = "<group>"; };
+		7F20AAAB23CB7EC700744ACD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		7F35CF432090CCBE006D721D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7F35CF452090CDBC006D721D /* ShusherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShusherButton.swift; sourceTree = "<group>"; };
 		7F35CF472090E0B2006D721D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				7F35CF432090CCBE006D721D /* MainViewController.swift */,
+				7F20AAA723CB708B00744ACD /* RootNavController.swift */,
+				7F20AAAB23CB7EC700744ACD /* SettingsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -453,19 +459,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -482,6 +485,8 @@
 				7F7FBE1123C249AC0000CF5A /* AppStoreReviewManager.swift in Sources */,
 				7F35CF462090CDBC006D721D /* ShusherButton.swift in Sources */,
 				7FC3EF63209159BA00EF7CFA /* RedSegmentedControl.swift in Sources */,
+				7F20AAA823CB708B00744ACD /* RootNavController.swift in Sources */,
+				7F20AAAC23CB7EC700744ACD /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

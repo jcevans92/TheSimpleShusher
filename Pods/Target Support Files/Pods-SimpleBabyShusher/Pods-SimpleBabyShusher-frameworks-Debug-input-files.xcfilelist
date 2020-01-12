@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SimpleBabyShusher/Pods-SimpleBabyShusher-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework
+${BUILT_PRODUCTS_DIR}/LBTATools/LBTATools.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
